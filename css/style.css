@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap");
+.container {
+  margin: 0 auto;
+  padding: 0 15px; }
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+      padding: 0; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px; } }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px; } }
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/*
+   2. Remove default margin
+ */
+* {
+  margin: 0; }
+
+/*
+   Typographic tweaks!
+   3. Add accessible line-height
+   4. Improve text rendering
+ */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+   5. Improve media defaults
+ */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%; }
+
+/*
+   6. Remove built-in form typography styles
+ */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/*
+   7. Avoid text overflows
+ */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-weight: 400; }
+
+h1,
+h2 {
+  font-family: "Lora", sans-serif; }
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem; }
+
+/*
+   8. Create a root stacking context
+ */
+#root,
+#__next {
+  isolation: isolate; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.hidden {
+  display: none; }
+
+.c-1 {
+  flex: 0 0 8.3334%;
+  max-width: 8.3334%; }
+
+.c-1 {
+  flex: 0 0 8.3334%;
+  max-width: 8.3334%; }
+
+.c-2 {
+  flex: 0 0 16.6666%;
+  max-width: 16.6666%; }
+
+.c-3 {
+  flex: 0 0 25;
+  max-width: 8.25%; }
+
+.c-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%; }
+
+.c-5 {
+  flex: 0 0 41.6667%;
+  max-width: 41.6667%; }
+
+.c-6 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+.c-7 {
+  flex: 0 0 58.3333%;
+  max-width: 58.3333%; }
+
+.c-8 {
+  flex: 0 0 66.6667%;
+  max-width: 66.6667%; }
+
+.c-9 {
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.c-10 {
+  flex: 0 0 83.3333%;
+  max-width: 83.3333%; }
+
+.c-11 {
+  flex: 0 0 91.6667%;
+  max-width: 91.6667%; }
+
+.c-12 {
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+@media screen and (min-width: 640px) {
+  .sm-block {
+    display: block; }
+  .sm-hidden {
+    display: none; }
+  .sm-c-1 {
+    flex: 0 0 8.3334%;
+    max-width: 8.3334%; }
+  .sm-c-2 {
+    flex: 0 0 16.6666%;
+    max-width: 16.6666%; }
+  .sm-c-3 {
+    flex: 0 0 25;
+    max-width: 8.25%; }
+  .sm-c-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%; }
+  .sm-c-5 {
+    flex: 0 0 41.6667%;
+    max-width: 41.6667%; }
+  .sm-c-6 {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .sm-c-7 {
+    flex: 0 0 58.3333%;
+    max-width: 58.3333%; }
+  .sm-c-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%; }
+  .sm-c-9 {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  .sm-c-10 {
+    flex: 0 0 83.3333%;
+    max-width: 83.3333%; }
+  .sm-c-11 {
+    flex: 0 0 91.6667%;
+    max-width: 91.6667%; }
+  .sm-c-12 {
+    flex: 0 0 100%;
+    max-width: 100%; } }
+
+@media screen and (min-width: 768px) {
+  .md-hidden {
+    display: none; }
+  .md-block {
+    display: block; }
+  .md-c-1 {
+    flex: 0 0 8.3334%;
+    max-width: 8.3334%; }
+  .md-c-2 {
+    flex: 0 0 16.6666%;
+    max-width: 16.6666%; }
+  .md-c-3 {
+    flex: 0 0 25;
+    max-width: 8.25%; }
+  .md-c-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%; }
+  .md-c-5 {
+    flex: 0 0 41.6667%;
+    max-width: 41.6667%; }
+  .md-c-6 {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .md-c-7 {
+    flex: 0 0 58.3333%;
+    max-width: 58.3333%; }
+  .md-c-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%; }
+  .md-c-9 {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  .md-c-10 {
+    flex: 0 0 83.3333%;
+    max-width: 83.3333%; }
+  .md-c-11 {
+    flex: 0 0 91.6667%;
+    max-width: 91.6667%; }
+  .md-c-12 {
+    flex: 0 0 100%;
+    max-width: 100%; } }
+
+@media screen and (min-width: 1024px) {
+  .lg-hidden {
+    display: none; }
+  .lg-block {
+    display: block; }
+  .lg-c-1 {
+    flex: 0 0 8.3334%;
+    max-width: 8.3334%; }
+  .lg-c-1 {
+    flex: 0 0 8.3334%;
+    max-width: 8.3334%; }
+  .lg-c-2 {
+    flex: 0 0 16.6666%;
+    max-width: 16.6666%; }
+  .lg-c-2-4 {
+    flex: 0 0 20%;
+    max-width: 20%; }
+  .lg-c-3 {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  .lg-c-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%; }
+  .lg-c-5 {
+    flex: 0 0 41.6667%;
+    max-width: 41.6667%; }
+  .lg-c-6 {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .lg-c-7 {
+    flex: 0 0 58.3333%;
+    max-width: 58.3333%; }
+  .lg-c-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%; }
+  .lg-c-9 {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  .lg-c-10 {
+    flex: 0 0 83.3333%;
+    max-width: 83.3333%; }
+  .lg-c-11 {
+    flex: 0 0 91.6667%;
+    max-width: 91.6667%; }
+  .lg-c-12 {
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .lg-c-o-1 {
+    margin-left: 8.3334%; }
+  .lg-c-o-2 {
+    margin-left: 16.6666%; }
+  .lg-c-o-3 {
+    margin-left: 25%; }
+  .lg-c-o-4 {
+    margin-left: 33.3333%; }
+  .lg-c-o-5 {
+    margin-left: 41.6667%; }
+  .lg-c-o-6 {
+    margin-left: 50%; }
+  .lg-c-o-7 {
+    margin-left: 58.3333%; }
+  .lg-c-o-8 {
+    margin-left: 66.6667%; }
+  .lg-c-o-9 {
+    margin-left: 75%; }
+  .lg-c-o-10 {
+    margin-left: 83.3333%; }
+  .lg-c-o-11 {
+    margin-left: 91.6667%; }
+  .lg-c-o-12 {
+    margin-left: 100%; } }
+
+p {
+  font-size: 1.4rem; }
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.image-frame {
+  position: relative; }
+  .image-frame img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center; }
+
+.section + .section {
+  margin-top: 40px; }
+  @media screen and (min-width: 1020px) {
+    .section + .section {
+      margin-top: 80px; } }
+
+.section__top .row {
+  justify-content: center;
+  margin: 0 -2px; }
+  @media screen and (min-width: 1020px) {
+    .section__top .row {
+      margin: 0 -16px; } }
+  .section__top .row .c {
+    padding: 0 2px; }
+    @media screen and (min-width: 1020px) {
+      .section__top .row .c {
+        padding: 0 16px; } }
+    .section__top .row .c > :not([hidden]) ~ :not([hidden]) {
+      margin-top: 24px; }
+
+.section__top h2 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 42px;
+  color: #2c2a29; }
+  @media screen and (min-width: 1020px) {
+    .section__top h2 {
+      font-size: 40px;
+      line-height: 50px; } }
+
+.section__top p {
+  text-align: center;
+  line-height: 22px; }
+  @media screen and (min-width: 1020px) {
+    .section__top p {
+      font-size: 16px; } }
+
+.section__top .image-frame {
+  padding-top: 163%; }
+  .section__top .image-frame img {
+    border-radius: 16px; }
+
+.section__bottom > .row {
+  margin: -4px; }
+  .section__bottom > .row + .row {
+    margin-top: 4px; }
+  .section__bottom > .row--reverse .c:nth-child(1) {
+    order: 1; }
+  @media screen and (min-width: 1020px) {
+    .section__bottom > .row--reverse .c:nth-child(1) {
+      order: 0; } }
+  .section__bottom > .row .c {
+    padding: 4px;
+    overflow: hidden; }
+    .section__bottom > .row .c .image-frame {
+      border-radius: 16px;
+      overflow: hidden; }
+    .section__bottom > .row .c .inner {
+      height: 100%;
+      border-radius: 16px;
+      background-color: #f4f0ea;
+      color: #1f1f1f;
+      padding: 18px; }
+      @media screen and (min-width: 1020px) {
+        .section__bottom > .row .c .inner {
+          padding: 0 48px; } }
+      .section__bottom > .row .c .inner h5 {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 30px; }
+        @media screen and (min-width: 1020px) {
+          .section__bottom > .row .c .inner h5 {
+            font-size: 20px; } }
+
+.section__bottom .image-frame {
+  padding-top: 116%; }
+
+.section__bottom .box-text {
+  margin-top: auto;
+  padding-bottom: 48px; }
+  .section__bottom .box-text > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 24px; }
+  .section__bottom .box-text h1 {
+    font-size: 32px;
+    line-height: 42px; }
+    @media screen and (min-width: 1020px) {
+      .section__bottom .box-text h1 {
+        font-size: 64px;
+        line-height: 74px; } }
+  @media screen and (min-width: 1020px) {
+    .section__bottom .box-text--bottom {
+      padding-bottom: 70px; } }
+  .section__bottom .box-text--bottom .group > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 20px; }

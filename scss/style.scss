@@ -1,0 +1,169 @@
+@import "common";
+@import "grid";
+
+p {
+   font-size: 1.4rem;
+}
+
+.container {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.image-frame {
+   position: relative;
+   img {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+   }
+}
+
+.section {
+   + .section {
+      margin-top: 40px;
+      @include lg() {
+         margin-top: 80px;
+      }
+   }
+}
+
+.section {
+   &__top {
+      .row {
+         justify-content: center;
+
+         margin: 0 -2px;
+
+         @include lg() {
+            margin: 0 -16px;
+         }
+
+         .c {
+            padding: 0 2px;
+
+            @include lg() {
+               padding: 0 16px;
+            }
+
+            @include spaceY(24px);
+         }
+      }
+
+      h2 {
+         text-align: center;
+         font-size: 32px;
+         line-height: 42px;
+         color: #2c2a29;
+
+         @include lg() {
+            font-size: 40px;
+            line-height: 50px;
+         }
+      }
+
+      p {
+         text-align: center;
+         line-height: 22px;
+         @include lg() {
+            font-size: 16px;
+         }
+      }
+
+      .image-frame {
+         padding-top: 163%;
+         img {
+            border-radius: 16px;
+         }
+      }
+   }
+
+   &__bottom {
+      > .row {
+         margin: -4px;
+
+         + .row {
+            margin-top: 4px;
+         }
+
+         &--reverse {
+            .c {
+               &:nth-child(1) {
+                  order: 1;
+               }
+            }
+            @include lg() {
+               .c {
+                  &:nth-child(1) {
+                     order: 0;
+                  }
+               }
+            }
+         }
+
+         .c {
+            padding: 4px;
+            overflow: hidden;
+
+            .image-frame {
+               border-radius: 16px;
+               overflow: hidden;
+            }
+
+            .inner {
+               height: 100%;
+               border-radius: 16px;
+               background-color: #f4f0ea;
+               color: #1f1f1f;
+               padding: 18px;
+               @include lg() {
+                  padding: 0 48px;
+               }
+
+               h5 {
+                  margin-bottom: 8px;
+
+                  font-size: 18px;
+                  line-height: 30px;
+
+                  @include lg() {
+                     font-size: 20px;
+                  }
+               }
+            }
+         }
+      }
+
+      .image-frame {
+         padding-top: 116%;
+      }
+
+      .box-text {
+         margin-top: auto;
+         @include spaceY(24px);
+         padding-bottom: 48px;
+
+         h1 {
+            font-size: 32px;
+            line-height: 42px;
+
+            @include lg() {
+               font-size: 64px;
+               line-height: 74px;
+            }
+         }
+
+         &--bottom {
+            @include lg() {
+               padding-bottom: 70px;
+            }
+            .group {
+               @include spaceY(20px);
+            }
+         }
+      }
+   }
+}
